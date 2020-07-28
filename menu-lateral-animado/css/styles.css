@@ -1,0 +1,52 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* MENU */
+.menu-container {
+    background-color: cornflowerblue;
+    color: white;
+    position: relative;
+    padding: 15px 20px;
+}
+
+#btn-menu {
+    display: none;
+}
+#btn-menu:checked ~ .menu {
+    transform: translateX(0);
+}
+.button {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    width: 320px;
+    top: 53px;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .4s all ;
+}
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    background-color: tomato;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+}
+.menu-link:last-child {
+    border-bottom: none;
+}
+.menu-link:hover {
+    background-color: #222;
+}
