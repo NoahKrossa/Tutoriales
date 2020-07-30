@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SLIDER */
+
+.slider {
+    width: 600px;
+    margin: 1em auto;
+    overflow: hidden ;
+}
+
+.slider-body {
+    display: flex;
+    width: 400%;
+}
+.img {
+    display: block;
+    width: 100%;
+    transition: 1s transform;
+}
+
+
+/* BUTTONS*/
+.button-group {
+    display:table;
+    margin: auto;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+}
+.button:hover {
+    background-color:#333 ;
+    color: white;
+}
