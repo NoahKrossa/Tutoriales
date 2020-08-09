@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAZY LOADING TUTORIAL</title>
+    <style>
+      .observer {
+        height: 400px;
+        width: 100%;
+        background-color: red;
+        position: fixed ;
+        left: 0;
+        top: 300px;
+        content: "";
+        z-index: -100000;
+      }
+      .container {
+        position: relative;
+        background-color: whitesmoke;
+        width: 700px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      .img {
+        z-index: -1;
+        display: block;
+        width: 100%;
+        background-color: rgb(214, 214, 214);
+        height: 600px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img" data-src="img/elepahnt.jpg" >
+      <img class="img" data-src="img/koala.jpg" >
+      <img class="img" data-src="img/lion.jpg" >
+      <img class="img" data-src="img/panda.jpg" >
+      <img class="img" data-src="img/tigre.jpg" >
+      <img class="img" data-src="img/camel.jpg" >
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
